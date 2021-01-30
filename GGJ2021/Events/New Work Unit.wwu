@@ -20,6 +20,40 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Steps" ID="{4EF8EA2D-3213-40AC-B2A9-5A37DF4E9009}">
+					<ChildrenList>
+						<Action Name="" ID="{9DB9EEDD-D876-42E5-980F-76A37561EF7A}" ShortID="403035885">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{04CF463E-A4CD-4D80-A8F0-A8D721A87C5F}" ShortID="580487104">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{60225275-8BB4-4332-8C95-1CF49E1EF3DE}" WorkUnitID="{88DA79F4-F8CC-44A7-9E37-9056684F79EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jump" ID="{06956441-8624-452F-93CC-725B3217A9DE}">
+					<ChildrenList>
+						<Action Name="" ID="{84BA084B-F839-4AD2-A6EF-ADA8F75D1AD5}" ShortID="128068540">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{D7205D27-1524-4029-BB6C-9E53D8D69A16}" ShortID="357334804">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{10A1B36B-7C51-43BA-AB68-22973721AA2A}" WorkUnitID="{88DA79F4-F8CC-44A7-9E37-9056684F79EB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
