@@ -13,12 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID NEW_EVENT = 3050945240U;
+        static const AkUniqueID RAIN = 2043403999U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PLAYBACK_RATE = 1524500807U;
+        static const AkUniqueID RAIN_INTENSITY = 2520241501U;
         static const AkUniqueID RPM = 796049864U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;

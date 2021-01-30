@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{00095AEF-7BBE-40DA-BE31-6A881AFC525F}">
 					<ObjectInclusionList>
-						<ObjectRef Name="New_Event" ID="{830F589C-2D02-44A2-BC0E-08FBACD369F1}" WorkUnitID="{C2B78076-7090-4654-8E98-95C022375C81}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Rain" ID="{830F589C-2D02-44A2-BC0E-08FBACD369F1}" WorkUnitID="{C2B78076-7090-4654-8E98-95C022375C81}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

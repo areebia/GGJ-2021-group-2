@@ -3,12 +3,18 @@
 	<Events>
 		<WorkUnit Name="New Work Unit" ID="{C2B78076-7090-4654-8E98-95C022375C81}" OwnerID="{63E186CC-2861-4822-A6ED-206999128FA5}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="New_Event" ID="{830F589C-2D02-44A2-BC0E-08FBACD369F1}">
+				<Event Name="Rain" ID="{830F589C-2D02-44A2-BC0E-08FBACD369F1}">
 					<ChildrenList>
+						<Action Name="" ID="{104D20AA-2408-49D6-A478-4C5C4A29A4D1}" ShortID="781709647">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
 						<Action Name="" ID="{8CC966CD-D701-40DE-9F1F-1254CF0E77E4}" ShortID="620921391">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="New Sound SFX" ID="{CF566A16-62E3-4039-B4C9-0C15640D3151}" WorkUnitID="{88DA79F4-F8CC-44A7-9E37-9056684F79EB}"/>
+									<ObjectRef Name="Rain" ID="{0B4A2372-0A12-43E9-B187-C32E075838AA}" WorkUnitID="{88DA79F4-F8CC-44A7-9E37-9056684F79EB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -230,7 +230,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 0f2638830dfc6b41b18f9de46f659276
     GuidInternal: 
-    m_lastTime: -8585897020424775808
+    m_lastTime: -8585896387304775808
     List:
     - name: Main
       guid: ef5a0900be7bda40be316a881afc525f
@@ -260,19 +260,19 @@ MonoBehaviour:
     ParentPath: Default Work Unit/New Work Unit
     guid: 7680b7c2907054468e9895c022375c81
     GuidInternal: 
-    m_lastTime: -8585897020424775808
+    m_lastTime: -8585896387304775808
     List:
-    - name: New_Event
+    - name: Rain
       guid: 9c580f83022da244bc0e08fbacd369f1
-      id: 3050945240
+      id: 2043403999
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: New Work Unit
         ObjectType: 12
-      - ElementName: New_Event
+      - ElementName: Rain
         ObjectType: 3
-      Path: Default Work Unit/New Work Unit/New_Event
+      Path: Default Work Unit/New Work Unit/Rain
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -284,8 +284,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 61bd6254ff06ed46b139df33b6b7dd79
     GuidInternal: 
-    m_lastTime: -8585897033814775808
-    List: []
+    m_lastTime: -8585896399684775808
+    List:
+    - name: rain_intensity
+      guid: 8e353dd1da3ad24fb9429323a08f9832
+      id: 2520241501
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rain_intensity
+        ObjectType: 13
+      Path: Default Work Unit/rain_intensity
   - PhysicalPath: Game Parameters/Factory Motion.wwu
     PathAndIcons:
     - ElementName: Factory Motion
@@ -447,7 +456,5 @@ MonoBehaviour:
   - /GGJ2021/Events
   - /GGJ2021/Events/Default Work Unit
   - /GGJ2021/Events/Default Work Unit/New Work Unit
-  - /GGJ2021/SoundBanks
-  - /GGJ2021/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
