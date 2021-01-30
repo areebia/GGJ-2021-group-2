@@ -50,16 +50,6 @@ public class EnemyController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //animations and jumping
-        if (canJump == true)
-        {
-            anim.SetBool("IsJumping", true);
-            rb.AddForce(Vector2.up * jumpspeed);
-        }
-        else
-        {
-            anim.SetBool("IsIdle", true);
-            anim.SetBool("IsJumping", false);
-        }
+       
     }
 }
