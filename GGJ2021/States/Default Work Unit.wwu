@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3406A35E-6179-44A3-851E-FA2765D43DF3}" SchemaVersion="97">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{3406A35E-6179-44A3-851E-FA2765D43DF3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3406A35E-6179-44A3-851E-FA2765D43DF3}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Height_meter" ID="{40F8A48D-F9BC-44A9-8AA5-D775CA4FD38C}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C29EE469-1FD1-44E2-8D90-1B938DD4927B}"/>
+						<State Name="s1" ID="{321F1BC9-FC0E-46FC-890D-A43A8840E391}"/>
+						<State Name="s2" ID="{898505A0-F9A5-4627-A5E6-58D5CA821444}"/>
+						<State Name="s3" ID="{D1830228-CF2B-42A7-880B-D34AD926A934}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
