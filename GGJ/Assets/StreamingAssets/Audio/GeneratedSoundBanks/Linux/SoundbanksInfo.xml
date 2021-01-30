@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4288920953">
+		<SoundBank Id="3161908922" Language="SFX" Hash="824257819">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -30,7 +30,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2043403999" Name="Rain" ObjectPath="\Events\Default Work Unit\New Work Unit\Rain" DurationType="Infinite"/>
-				<Event Id="1718617278" Name="Steps" ObjectPath="\Events\Default Work Unit\New Work Unit\Steps" DurationType="Infinite">
+				<Event Id="1718617278" Name="Steps" ObjectPath="\Events\Default Work Unit\New Work Unit\Steps" DurationType="OneShot" DurationMin="0.474098" DurationMax="0.652142">
 					<IncludedMemoryFiles>
 						<File Id="197053369" Language="SFX">
 							<ShortName>Step_int - Stereo Out.wav</ShortName>
