@@ -4,7 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="rain_intensity" ID="{D13D358E-3ADA-4FD2-B942-9323A08F9832}"/>
-				<GameParameter Name="water_meter" ID="{62AFC503-8EBF-43D5-B666-EFFE6D552061}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

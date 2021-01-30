@@ -1,10 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1718617278	Steps			\Default Work Unit\New Work Unit\Steps	
 	2043403999	Rain			\Default Work Unit\New Work Unit\Rain	
-	3833651337	Jump			\Default Work Unit\New Work Unit\Jump	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	1988381400	water_meter			\Default Work Unit\water_meter	
 	2520241501	rain_intensity			\Default Work Unit\rain_intensity	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
@@ -29,8 +26,4 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	312442219	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_noise\New Sound SFX\Wwise Synth One	
 	820039791	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_noise\New Sound SFX_02\Wwise Synth One	
 	1063229866	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_noise\New Sound SFX_01\Wwise Synth One	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	314928148	steps	Y:\Documents\GitHub\GGJ-2021-group-2\GGJ2021\.cache\Windows\SFX\water_droplets_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Steps\steps		63228
-	835174681	water_splash_heavy	Y:\Documents\GitHub\GGJ-2021-group-2\GGJ2021\.cache\Windows\SFX\water_splash_heavy_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump\water_splash_heavy		122528
 

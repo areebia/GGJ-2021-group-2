@@ -13,9 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID RAIN = 2043403999U;
-        static const AkUniqueID STEPS = 1718617278U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
@@ -33,7 +31,6 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
-        static const AkUniqueID WATER_METER = 1988381400U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

@@ -3,6 +3,19 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{88DA79F4-F8CC-44A7-9E37-9056684F79EB}" PersistMode="Standalone">
 			<ChildrenList>
+				<RandomSequenceContainer Name="New Sequence Container" ID="{7BA6777F-07A8-4672-AC45-8D6948F4247B}" ShortID="754082207">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+						</Reference>
+					</ReferenceList>
+				</RandomSequenceContainer>
 				<BlendContainer Name="Rain" ID="{0B4A2372-0A12-43E9-B187-C32E075838AA}" ShortID="164193322">
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
@@ -11,11 +24,6 @@
 									<Modifier Name="" ID="{3952C71E-B36D-47A7-9E7D-63356ADFFF9A}"/>
 								</ModifierInfo>
 							</ModifierList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-10</Value>
-							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -61,9 +69,6 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{E5834238-5283-48C0-BAA5-64E38450A3EA}">
@@ -632,159 +637,6 @@
 						</BlendContainer>
 					</ChildrenList>
 				</BlendContainer>
-				<RandomSequenceContainer Name="Steps" ID="{60225275-8BB4-4332-8C95-1CF49E1EF3DE}" ShortID="443717024">
-					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{DBB8428C-D865-415B-B2FE-5255C9852C29}"/>
-								</ModifierInfo>
-							</ModifierList>
-							<RTPCList>
-								<RTPC Name="" ID="{2AA04FB2-63A3-49B9-9FF2-2BF71C767867}" ShortID="343306814">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="water_meter" ID="{62AFC503-8EBF-43D5-B666-EFFE6D552061}" WorkUnitID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{E974F8CB-7C8B-498C-A1FA-A43538B4956F}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>1180</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>-316</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
-						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="steps" ID="{F2A1D1F6-7FF4-425F-B895-9E7D82AC79F0}" ShortID="922476957">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{8C1CC14A-0839-4855-B055-CE448801D4BE}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="303"/>
-													<Property Name="Min" Type="Real64" Value="-404"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="water_droplets" ID="{43BE34C0-99C0-4A61-B770-696CF0F6F65C}">
-									<Language>SFX</Language>
-									<AudioFile>water_droplets.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="314928148"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="water_droplets" ID="{43BE34C0-99C0-4A61-B770-696CF0F6F65C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Jump" ID="{10A1B36B-7C51-43BA-AB68-22973721AA2A}" ShortID="985129045">
-					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<RTPCList>
-								<RTPC Name="" ID="{108E8D63-D5FF-4325-BCDE-70F3E2F6D03C}" ShortID="78206434">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="water_meter" ID="{62AFC503-8EBF-43D5-B666-EFFE6D552061}" WorkUnitID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{4A46AECE-6391-44E3-8E90-2D41FF4A8631}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>818</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>-139</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="water_splash_heavy" ID="{ED290047-2232-4F20-BB57-6E397E5816F5}" ShortID="622119472">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="water_splash_heavy" ID="{932B3BFE-E49F-44A0-8AF8-692C8C16807B}">
-									<Language>SFX</Language>
-									<AudioFile>water_splash_heavy.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="835174681"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="water_splash_heavy" ID="{932B3BFE-E49F-44A0-8AF8-692C8C16807B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
