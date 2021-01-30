@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1199CD46-1AB9-43DF-8A7C-4AB0BABEF949}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{1199CD46-1AB9-43DF-8A7C-4AB0BABEF949}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1199CD46-1AB9-43DF-8A7C-4AB0BABEF949}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Height_meter" ID="{204CFF8D-0C44-4D19-9988-0C64CA1B6228}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

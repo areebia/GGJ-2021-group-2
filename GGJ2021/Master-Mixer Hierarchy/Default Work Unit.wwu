@@ -9,6 +9,72 @@
 							<ObjectRef Name="System" ID="{4854C8B1-44FE-4E04-9B15-28A5E3A43E21}" WorkUnitID="{531C96C7-54A8-4132-8C2A-72258787E1D8}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{F8ECEF58-C6BD-4E51-8E76-B0D5DBE35525}">
+							<PropertyList>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{49F9421E-B2FE-4745-A56E-984780B9DC2E}" ShortID="660264783">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="music_volume" ID="{4972D029-6506-497B-BE10-5CEDFC7824E7}" WorkUnitID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A875AE4B-B26A-43FC-AF0E-D4608F4248F7}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}">
+							<PropertyList>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{3252CB7F-934A-4C58-BEF2-45DCA26F8413}" ShortID="231859192">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="sfx_volume" ID="{2A21003D-8E5D-4E4C-97EE-056847FB0399}" WorkUnitID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{4CACE9A1-E7A4-43D1-9D0E-885D6491EF33}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 				<Bus Name="Motion Factory Bus" ID="{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}">
 					<ReferenceList>

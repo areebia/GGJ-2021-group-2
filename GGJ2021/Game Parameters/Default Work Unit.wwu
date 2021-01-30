@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="rain_intensity" ID="{D13D358E-3ADA-4FD2-B942-9323A08F9832}"/>
+				<GameParameter Name="water_meter" ID="{6CED4277-03A5-41DB-9A7A-B1987293323D}"/>
+				<GameParameter Name="music_volume" ID="{4972D029-6506-497B-BE10-5CEDFC7824E7}"/>
+				<GameParameter Name="sfx_volume" ID="{2A21003D-8E5D-4E4C-97EE-056847FB0399}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
