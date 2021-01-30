@@ -6,6 +6,8 @@
 				<SoundBank Name="Main" ID="{00095AEF-7BBE-40DA-BE31-6A881AFC525F}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Rain" ID="{830F589C-2D02-44A2-BC0E-08FBACD369F1}" WorkUnitID="{C2B78076-7090-4654-8E98-95C022375C81}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Steps" ID="{D3B1A42A-9013-4D28-A8BE-D4955DEE0E28}" WorkUnitID="{C2B78076-7090-4654-8E98-95C022375C81}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Jump" ID="{6735B046-30C1-4DF6-BDF5-ADEB6EB8E668}" WorkUnitID="{C2B78076-7090-4654-8E98-95C022375C81}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

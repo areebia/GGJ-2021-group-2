@@ -3,19 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{88DA79F4-F8CC-44A7-9E37-9056684F79EB}" PersistMode="Standalone">
 			<ChildrenList>
-				<RandomSequenceContainer Name="New Sequence Container" ID="{7BA6777F-07A8-4672-AC45-8D6948F4247B}" ShortID="754082207">
-					<PropertyList>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
-						</Reference>
-					</ReferenceList>
-				</RandomSequenceContainer>
 				<BlendContainer Name="Rain" ID="{0B4A2372-0A12-43E9-B187-C32E075838AA}" ShortID="164193322">
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
@@ -24,6 +11,11 @@
 									<Modifier Name="" ID="{3952C71E-B36D-47A7-9E7D-63356ADFFF9A}"/>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-19</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -69,6 +61,9 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{E5834238-5283-48C0-BAA5-64E38450A3EA}">
@@ -637,6 +632,210 @@
 						</BlendContainer>
 					</ChildrenList>
 				</BlendContainer>
+				<Sound Name="Jump" ID="{95FDB3BB-0B4E-4E77-9213-647E27612FF8}" ShortID="552114218">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9DBEA426-6935-4A2A-95C7-6DC04EDF9D68}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="76"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+							<RTPCList>
+								<RTPC Name="" ID="{B744857E-FA21-4D12-9E36-F5D5EE88A96A}" ShortID="86331389">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="water_meter" ID="{6CED4277-03A5-41DB-9A7A-B1987293323D}" WorkUnitID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{67D6C396-A3C5-4087-B1D1-2C5F98E8A8C9}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>436</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-437</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Jump_int - Stereo Out" ID="{2FA524F0-0131-409F-9223-76A3AEE58224}">
+							<Language>SFX</Language>
+							<AudioFile>Jump_int - Stereo Out.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="327860067"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Jump_int - Stereo Out" ID="{2FA524F0-0131-409F-9223-76A3AEE58224}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Steps" ID="{6F5C2C97-2E7C-46C7-B58A-E068F4732C63}" ShortID="167384782">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Steps" ID="{D50599CC-3B6D-4313-9F22-2CD66DFF6D55}" ShortID="805031337">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{743854F1-FAD1-4BBB-9E37-AC382AE7C4CB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="76"/>
+													<Property Name="Min" Type="Real64" Value="-76"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{7D51AD1B-3A2A-40D6-8CA0-20A4EF82DE89}" ShortID="65876866">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="water_meter" ID="{6CED4277-03A5-41DB-9A7A-B1987293323D}" WorkUnitID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5B620DCD-4425-4A14-AA11-9F01D59C9AB9}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>339</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-146</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Step_int - Stereo Out" ID="{F4D6268D-F319-49EB-9DFC-E240198ADED1}">
+									<Language>SFX</Language>
+									<AudioFile>Step_int - Stereo Out.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="197053369"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Step_int - Stereo Out" ID="{F4D6268D-F319-49EB-9DFC-E240198ADED1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Steps_01" ID="{0E7B07B8-D841-455A-9E36-5B2349E7BF61}" ShortID="235827537">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-400</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{187BBA51-423E-4FB3-9369-894CC4793CC9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="76"/>
+													<Property Name="Min" Type="Real64" Value="-76"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{70DF80EF-6DE4-469A-8552-E1A5A8921540}" ShortID="388490138">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="water_meter" ID="{6CED4277-03A5-41DB-9A7A-B1987293323D}" WorkUnitID="{5462BD61-06FF-46ED-B139-DF33B6B7DD79}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{27B634EA-5646-4104-BC30-A4ABCA07B8FE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>339</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-146</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Step_int - Stereo Out" ID="{1D16D2BB-F6AF-49D1-8D83-60C5DDECE75F}">
+									<Language>SFX</Language>
+									<AudioFile>Step_int - Stereo Out.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="197053369"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Step_int - Stereo Out" ID="{1D16D2BB-F6AF-49D1-8D83-60C5DDECE75F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
