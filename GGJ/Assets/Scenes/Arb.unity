@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 908328033}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Player
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,9 +450,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 908328032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6b46728e32ce34478c463009f47e554, type: 3}
+  m_Script: {fileID: 11500000, guid: 386176cbb79e8bf46922fb417bcc87ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  accelerationTime: 0.5
+  maxSpeed: 10
 --- !u!50 &908328034
 Rigidbody2D:
   serializedVersion: 4
@@ -700,9 +702,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b46728e32ce34478c463009f47e554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 5
   jumpspeed: 100
-  anim: {fileID: 0}
+  anim: {fileID: 1860803573}
+  rend: {fileID: 1860803574}
 --- !u!1 &1860803569
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +718,7 @@ GameObject:
   - component: {fileID: 1860803574}
   - component: {fileID: 1860803573}
   m_Layer: 0
-  m_Name: Sprite
+  m_Name: p_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -745,7 +748,7 @@ Animator:
   m_GameObject: {fileID: 1860803569}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 911285c9de695fa46bf68279ad52f09d, type: 2}
+  m_Controller: {fileID: 9100000, guid: f381fdd16087189439d569529682e244, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
