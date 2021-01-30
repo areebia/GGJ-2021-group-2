@@ -14,7 +14,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-19</Value>
+								<Value>-14</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -23,13 +23,14 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+							<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Droplets" ID="{BAD46C9B-44FC-46FE-9A67-E6B6AAF2D46F}" ShortID="463580723">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -81,14 +82,13 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+									<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="DropletsR" ID="{CF566A16-62E3-4039-B4C9-0C15640D3151}" ShortID="954731209">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -296,6 +296,7 @@
 							<ChildrenList>
 								<Sound Name="New Sound SFX" ID="{6DF36BB7-2A06-44A8-8AE2-E8CF2A3D094D}" ShortID="369132338">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -311,7 +312,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+											<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -374,6 +375,7 @@
 								</Sound>
 								<Sound Name="New Sound SFX_01" ID="{BF0421BD-EAFC-4C27-8659-63A9156BC4F7}" ShortID="460078052">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
@@ -382,7 +384,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+											<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -481,6 +483,7 @@
 											</RTPCList>
 										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -577,7 +580,7 @@
 											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+											<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -679,7 +682,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+							<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -705,7 +708,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+							<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -840,6 +843,97 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="campfire" ID="{C0821D8C-5E56-4C72-9803-AA9106CCBFEF}" ShortID="67190046">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="campfire" ID="{BBDCF190-A853-4974-A6FF-6E0BB7975199}">
+							<Language>SFX</Language>
+							<AudioFile>campfire.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="499777651"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="campfire" ID="{BBDCF190-A853-4974-A6FF-6E0BB7975199}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ui_confirm" ID="{E1E407F3-F289-4E1A-B285-1193A1BD6CC8}" ShortID="802062266">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ui_confirm" ID="{9B714D97-21E2-40EE-8AA1-64FE5816F1DF}">
+							<Language>SFX</Language>
+							<AudioFile>ui_confirm.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="650105756"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ui_confirm" ID="{9B714D97-21E2-40EE-8AA1-64FE5816F1DF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ui_select" ID="{B40DE6BE-1839-473A-8BD1-D5925DC572D9}" ShortID="68569256">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ui_select" ID="{C3624492-1A75-4E49-936D-AD22DEE635A2}">
+							<Language>SFX</Language>
+							<AudioFile>ui_select.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="313529834"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ui_select" ID="{C3624492-1A75-4E49-936D-AD22DEE635A2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ui_drag" ID="{3D52D959-E746-4501-85CE-730E4D9BBCBA}" ShortID="220541461">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2A9CCEDA-7CF1-4900-9407-137A1525B30D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{9E812D49-E7DB-46EE-81CA-1E20401F8F03}" WorkUnitID="{158A9179-719A-4E05-9BCF-99415587EDCA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ui_drag" ID="{BCB9FAFC-C642-458A-83E0-8B2B446F9EEA}">
+							<Language>SFX</Language>
+							<AudioFile>ui_drag.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="937808257"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ui_drag" ID="{BCB9FAFC-C642-458A-83E0-8B2B446F9EEA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
