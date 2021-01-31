@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public static float health;
+    private Vector2 size;
 
     void Start()
     {
-        health = 1f;
+        health = 2f;
     }
     void Update()
     {
+        transform.localScale = new Vector2(health, health);
+
         if (health < 1) {
             Destroy(gameObject);
             Scene scene = SceneManager.GetActiveScene(); 
@@ -24,8 +27,6 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "drop" && health < 2)
         {
             health += .1f;
-
-            transform.localScale = new Vector2(transform.localScale.x + .1f, transform.localScale.y + .1f);
 
             collision.gameObject.GetComponent<ParticleSystem>().Play();
 
