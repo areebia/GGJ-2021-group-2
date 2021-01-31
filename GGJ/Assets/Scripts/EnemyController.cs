@@ -28,6 +28,7 @@ public class EnemyController : MonoBehaviour
             timeLeft += accelerationTime;
         }
      
+
     }
     void FixedUpdate()
     {
