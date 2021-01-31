@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "flag")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         if (collision.gameObject.tag == "floor")
@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
+        }
+        if (collision.gameObject.tag == "enemy")
+        {
+            PlayerHealth.health -= .5f;
         }
     }
     private void OnCollisionExit2D(Collision2D collision)

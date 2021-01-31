@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7014731413405459495}
   - component: {fileID: 7120138732398293229}
   - component: {fileID: 1750432852613124312}
-  m_Layer: 0
+  - component: {fileID: -81257796314934784}
+  m_Layer: 8
   m_Name: WaterProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,3 +118,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845da10bce1665c46a1dcc1cf9ad0bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &-81257796314934784
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338604248217340243}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0029089004, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.20038004

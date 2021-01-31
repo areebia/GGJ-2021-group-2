@@ -14,6 +14,13 @@ public class SelfDestruct : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (time >= 3) { Destroy(gameObject); }
+        if (time >= 1.5) { Destroy(gameObject); }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "enemy") {
+            Debug.Log("enemy collision");
+            Destroy(collision.gameObject);
+        }
     }
 }

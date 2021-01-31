@@ -196,6 +196,7 @@
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\AkCommonPlatformSettings.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkEnvironment.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerDisable.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseObjects\WwiseSwitchReference.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Windows\AkAudioAPI_Windows.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkQueryRTPCValue.cs" />
@@ -280,7 +281,6 @@
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkEventCallbackInfo.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkGameObjListenerList.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioSettings.cs" />
-    <Compile Include="Assets\wingame.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\iZotope.dll" />

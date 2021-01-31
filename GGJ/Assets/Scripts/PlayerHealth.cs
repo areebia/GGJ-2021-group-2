@@ -24,15 +24,25 @@ public class PlayerHealth : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "drop" && health < 2)
+        if (collision.gameObject.tag == "drop" )
         {
-            health += .1f;
+            if (health < 2)
+            {
+                health += .1f;
 
-            collision.gameObject.GetComponent<ParticleSystem>().Play();
+                collision.gameObject.GetComponent<ParticleSystem>().Play();
 
-            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
 
-            Destroy(collision.gameObject,.5f);
+                Destroy(collision.gameObject, .5f);
+            }
+            else {
+                collision.gameObject.GetComponent<ParticleSystem>().Play();
+
+                collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+                Destroy(collision.gameObject, .5f);
+            }
         }
     }
 }
