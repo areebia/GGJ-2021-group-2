@@ -1106,7 +1106,7 @@ MonoBehaviour:
   isStaticObject: 0
   m_positionOffsetData:
     KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
+    positionOffset: {x: 0.023493946, y: 0.025003873, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
 --- !u!20 &519420031
@@ -1161,7 +1161,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: -10}
-  m_LocalScale: {x: 0.54185, y: 0.54185, z: 0.54185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
