@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 79918a159a71054e9bcf99415587edca
     GuidInternal: 
-    m_lastTime: -8585896258540868594
+    m_lastTime: -8585895599167330003
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -222,6 +222,28 @@ MonoBehaviour:
       - ElementName: Motion Factory Bus
         ObjectType: 2
       Path: Default Work Unit\Motion Factory Bus
+    - name: Music
+      guid: 58efecf8bdc6514e8e76b0d5dbe35525
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Music
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Music
+    - name: SFX
+      guid: 492d819edbe7ee4681ca1e20401f8f03
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -230,7 +252,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 0f2638830dfc6b41b18f9de46f659276
     GuidInternal: 
-    m_lastTime: -8585896225466325724
+    m_lastTime: -8585895599162331544
     List:
     - name: Main
       guid: ef5a0900be7bda40be316a881afc525f
@@ -260,8 +282,22 @@ MonoBehaviour:
     ParentPath: Default Work Unit\New Work Unit
     guid: 7680b7c2907054468e9895c022375c81
     GuidInternal: 
-    m_lastTime: -8585896225466345664
+    m_lastTime: -8585895599168028138
     List:
+    - name: Jump
+      guid: 46b03567c130f64dbdf5adeb6eb8e668
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New Work Unit
+        ObjectType: 12
+      - ElementName: Jump
+        ObjectType: 3
+      Path: Default Work Unit\New Work Unit\Jump
+      maxAttenuation: 0
+      maxDuration: 0.517605
+      minDuration: 0.474098
     - name: Rain
       guid: 9c580f83022da244bc0e08fbacd369f1
       id: 2043403999
@@ -276,6 +312,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Steps
+      guid: 2aa4b1d31390284da8bed4955dee0e28
+      id: 1718617278
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New Work Unit
+        ObjectType: 12
+      - ElementName: Steps
+        ObjectType: 3
+      Path: Default Work Unit\New Work Unit\Steps
+      maxAttenuation: 0
+      maxDuration: 0.652142
+      minDuration: 0.474098
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -284,8 +334,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 61bd6254ff06ed46b139df33b6b7dd79
     GuidInternal: 
-    m_lastTime: -8585896225466335705
+    m_lastTime: -8585895599167828665
     List:
+    - name: music_volume
+      guid: 29d0724906657b49be105cedfc7824e7
+      id: 1006694123
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_volume
+        ObjectType: 13
+      Path: Default Work Unit\music_volume
     - name: rain_intensity
       guid: 8e353dd1da3ad24fb9429323a08f9832
       id: 2520241501
@@ -295,6 +354,24 @@ MonoBehaviour:
       - ElementName: rain_intensity
         ObjectType: 13
       Path: Default Work Unit\rain_intensity
+    - name: sfx_volume
+      guid: 3d00212a5d8e4c4e97ee056847fb0399
+      id: 1564184899
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: sfx_volume
+        ObjectType: 13
+      Path: Default Work Unit\sfx_volume
+    - name: water_meter
+      guid: 7742ed6ca503db419a7ab1987293323d
+      id: 1988381400
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: water_meter
+        ObjectType: 13
+      Path: Default Work Unit\water_meter
   - PhysicalPath: Game Parameters\Factory Motion.wwu
     PathAndIcons:
     - ElementName: Factory Motion
@@ -429,8 +506,45 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5ea306347961a344851efa2765d43df3
     GuidInternal: 
-    m_lastTime: -8585896258540020859
-    List: []
+    m_lastTime: -8585895599162321583
+    List:
+    - name: Height_meter
+      guid: 8da4f840bcf9a9448aa5d775ca4fd38c
+      id: 1426157518
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Height_meter
+        ObjectType: 9
+      Path: Default Work Unit\Height_meter
+      values:
+      - name: None
+        guid: 69e49ec2d11fe2448d901b938dd4927b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: s1
+        guid: c91b1f320efcfc46890da43a8840e391
+        id: 1584861493
+        PathAndIcons:
+        - ElementName: s1
+          ObjectType: 8
+      - name: s2
+        guid: a0058589a5f92746a5e658d5ca821444
+        id: 1584861494
+        PathAndIcons:
+        - ElementName: s2
+          ObjectType: 8
+      - name: s3
+        guid: 280283d12bcfa742880bd34ad926a934
+        id: 1584861495
+        PathAndIcons:
+        - ElementName: s3
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -439,7 +553,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 46cd9911b91adf438a7c4ab0babef949
     GuidInternal: 
-    m_lastTime: -8585896258540020859
+    m_lastTime: -8585895599162251764
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
