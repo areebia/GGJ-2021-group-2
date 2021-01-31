@@ -1447,8 +1447,8 @@ Tilemap:
   - first: {x: -4, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileIndex: 2
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1693,7 +1693,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 845e82d52b50c8e44909b67a696211f2, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 650bcc7f1e52a1e4482355b5b97a7996, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 889b9ec20809eb64aa9d99bb10c0cda8, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 9bafb84ce0ffccf429212b5ac6dd6f11, type: 2}
@@ -1701,7 +1701,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e07fc46053b54334f8cc0d9901489beb, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: f894e703e4cefd449a43c0fee3bf5364, type: 2}
-  - m_RefCount: 20
+  - m_RefCount: 19
     m_Data: {fileID: 11400000, guid: bf56cd12fe85d494b92672a63baff419, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 05d35c0643615cd41b0bcbe4be7d3762, type: 2}
@@ -1746,7 +1746,7 @@ Tilemap:
     m_Data: {fileID: 6408231970667830406, guid: b1a00b971d50e36468a60f11920472b7, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -9164683769879867358, guid: b1a00b971d50e36468a60f11920472b7, type: 3}
-  - m_RefCount: 20
+  - m_RefCount: 19
     m_Data: {fileID: 8040196581939011165, guid: b1a00b971d50e36468a60f11920472b7, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 3419707775326841495, guid: b1a00b971d50e36468a60f11920472b7, type: 3}
@@ -1774,7 +1774,7 @@ Tilemap:
     m_Data: {fileID: -6315978382755026507, guid: b1a00b971d50e36468a60f11920472b7, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -6936079216851816805, guid: b1a00b971d50e36468a60f11920472b7, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 7810936717752353743, guid: b1a00b971d50e36468a60f11920472b7, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -7245433517681746672, guid: b1a00b971d50e36468a60f11920472b7, type: 3}
