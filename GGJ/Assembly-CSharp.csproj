@@ -125,11 +125,13 @@
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkPlaylistArray.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkSpatialAudioInitSettings.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkGroupType.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkCallbackSerializer.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkSpatialAudioEmitter.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkPreparationType.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkObstructionOcclusionValues.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\Arrays\AkObjectInfoArray.cs" />
+    <Compile Include="Assets\Scripts\TestController.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMIDIEventTypes.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkPlaylist.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkState.cs" />
@@ -275,8 +277,7 @@
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkEventCallbackInfo.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkGameObjListenerList.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioSettings.cs" />
-    <Compile Include="Assets\Scripts\TestController.cs" />
-    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\HealthBar.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\iZotope.dll" />

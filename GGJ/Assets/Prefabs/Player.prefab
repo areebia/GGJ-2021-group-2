@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4442034187859715891}
   - component: {fileID: 4442034187859715888}
   - component: {fileID: 4442034187859715893}
+  - component: {fileID: 657714758949231364}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -63,7 +64,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 3
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -84,9 +85,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpspeed: 100
+  jumpspeed: 300
   anim: {fileID: 4442034188391693388}
   rend: {fileID: 4442034188391693391}
+--- !u!114 &657714758949231364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4442034187859715889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 099388d40d6d89d409eb432ee534b2a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4442034188391693384
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +112,7 @@ GameObject:
   - component: {fileID: 4442034188391693391}
   - component: {fileID: 4442034188391693388}
   m_Layer: 0
-  m_Name: p_Sprite
+  m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

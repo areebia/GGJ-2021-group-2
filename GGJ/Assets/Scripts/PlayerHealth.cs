@@ -12,16 +12,21 @@ public class PlayerHealth : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log("Health is " + health);
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "drop" && health < 2) {
-            health += .1f;            
-            transform.localScale = new Vector2(transform.localScale.x + .1f, transform.localScale.y + .1f);
-            collision.gameObject.GetComponent<ParticleSystem>().Play();
-            Destroy(collision.gameObject);
-        }
+        if (collision.gameObject.tag == "drop" && health < 2)
+        {
+            health += .1f;
 
+            transform.localScale = new Vector2(transform.localScale.x + .1f, transform.localScale.y + .1f);
+
+            collision.gameObject.GetComponent<ParticleSystem>().Play();
+
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+            Destroy(collision.gameObject,.5f);
+        }
     }
 }
