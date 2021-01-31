@@ -281,6 +281,8 @@
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkEventCallbackInfo.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkGameObjListenerList.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioSettings.cs" />
+    <Compile Include="Assets\Videoscript.cs" />
+    <Compile Include="Assets\skip.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\iZotope.dll" />
