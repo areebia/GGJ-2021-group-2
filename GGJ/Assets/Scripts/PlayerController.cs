@@ -18,15 +18,22 @@ public class PlayerController : MonoBehaviour
      
     void Start()
     {
+        Cursor.visible = false;
         rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "flag")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name + 1);
+        }
+
         if (collision.gameObject.tag == "floor")
         {
             isGrounded = true;
         }
+
         if (collision.gameObject.tag == "die")
         {
             Destroy(gameObject);
@@ -60,7 +67,7 @@ public class PlayerController : MonoBehaviour
         }
         else {
             isIdle = true;
-            anim.SetBool("IsRunning", false);
+            anim.SetBool("IsShooting", false);
         }
 
 

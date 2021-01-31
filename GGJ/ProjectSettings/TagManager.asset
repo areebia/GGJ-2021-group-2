@@ -7,6 +7,8 @@ TagManager:
   - floor
   - drop
   - die
+  - enemy
+  - flag
   layers:
   - Default
   - TransparentFX
