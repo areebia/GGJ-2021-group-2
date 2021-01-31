@@ -17,7 +17,6 @@ public class HealthBar : MonoBehaviour
     {
         health = PlayerHealth.health;
         int i = (int)Mathf.Round((health - 1) * 10);
-        Debug.Log("current sprite is " + i);
         rend.sprite = (Sprite)sprites[i + 1];
     }
 }
