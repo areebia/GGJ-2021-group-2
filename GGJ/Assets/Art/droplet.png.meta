@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 8855e3f54a90b8547a2587662fbaf1b9
+guid: 31d34fee848e04d42b1d0f339ecd5eee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8812986805003014111
-    second: WaterDropIdle_0
+      213: 7757420160248012790
+    second: droplet_0
   - first:
-      213: -4152612685082640271
-    second: WaterDropIdle_1
+      213: 4748219701143995388
+    second: droplet_1
   - first:
-      213: 6158100318291913752
-    second: WaterDropIdle_2
+      213: -1643649939428518526
+    second: droplet_2
   - first:
-      213: -3860631448264247626
-    second: WaterDropIdle_3
+      213: -2881811533944438585
+    second: droplet_3
   - first:
-      213: 1368233047507303267
-    second: WaterDropIdle_4
+      213: 1907020257303173960
+    second: droplet_4
   - first:
-      213: -3603560758705646363
-    second: WaterDropIdle_5
+      213: -7115429462358814069
+    second: droplet_5
   - first:
-      213: -9148993222288344547
-    second: WaterDropIdle_6
+      213: 4065042550427297328
+    second: droplet_6
   - first:
-      213: -2064275307309650002
-    second: WaterDropIdle_7
+      213: 486703672780314187
+    second: droplet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -137,7 +137,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WaterDropIdle_0
+      name: droplet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdfc8625ec40e4a70800000000000000
-      internalID: 8812986805003014111
+      spriteID: 6ff59010984e7ab60800000000000000
+      internalID: 7757420160248012790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterDropIdle_1
+      name: droplet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1704edfa3c4fe56c0800000000000000
-      internalID: -4152612685082640271
+      spriteID: cf3033a39a015e140800000000000000
+      internalID: 4748219701143995388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterDropIdle_2
+      name: droplet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81c620bcc97f57550800000000000000
-      internalID: 6158100318291913752
+      spriteID: 2855549a6159039e0800000000000000
+      internalID: -1643649939428518526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterDropIdle_3
+      name: droplet_3
       rect:
         serializedVersion: 2
         x: 0
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b6f18df6284c6ac0800000000000000
-      internalID: -3860631448264247626
+      spriteID: 7c04e99adafb108d0800000000000000
+      internalID: -2881811533944438585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterDropIdle_4
+      name: droplet_4
       rect:
         serializedVersion: 2
         x: 16
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36b7f9e15b0fcf210800000000000000
-      internalID: 1368233047507303267
+      spriteID: 84b9708f1d8177a10800000000000000
+      internalID: 1907020257303173960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterDropIdle_5
+      name: droplet_5
       rect:
         serializedVersion: 2
         x: 32
@@ -256,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e410da15949dfdc0800000000000000
-      internalID: -3603560758705646363
+      spriteID: b8211c76a9ae04d90800000000000000
+      internalID: -7115429462358814069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterDropIdle_6
+      name: droplet_6
       rect:
         serializedVersion: 2
         x: 0
@@ -277,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1afb05432f380180800000000000000
-      internalID: -9148993222288344547
+      spriteID: 036211f79aee96830800000000000000
+      internalID: 4065042550427297328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterDropIdle_7
+      name: droplet_7
       rect:
         serializedVersion: 2
         x: 16
@@ -298,8 +298,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eafa2358b883a53e0800000000000000
-      internalID: -2064275307309650002
+      spriteID: b46d2f6696e11c600800000000000000
+      internalID: 486703672780314187
       vertices: []
       indices: 
       edges: []
