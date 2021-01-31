@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     //public variables
     public float moveSpeed, jumpspeed;
-    private bool isGrounded, canJump, jumpAnim;
+    private bool isGrounded, canJump, isIdle;
     public Animator anim;
     public SpriteRenderer rend;
      
@@ -26,6 +27,12 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+        if (collision.gameObject.tag == "die")
+        {
+            Destroy(gameObject);
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -38,39 +45,46 @@ public class PlayerController : MonoBehaviour
     {
         inputX = Input.GetAxisRaw("Horizontal");
 
-        //check if we are grounded to jump in fixedupdate
-        if (isGrounded)
-        {
-            jumpAnim = true;
-
-            if (Input.GetButton("Jump")) {
-                canJump = true;
-            }
-            
+        if (isGrounded && Input.GetButton("Jump")){
+            isIdle = false;
+            canJump = true;
         }
         else {
-            jumpAnim = false;
+            isIdle = true;
             canJump = false;
         }
 
-        //check if we move and if so, move in the wasd direction
-        if (inputX != 0 && jumpAnim == true)
-        {
+        if (Input.GetButtonDown("Fire1")){
+            isIdle = false;
+            anim.SetBool("IsShooting", true);
+        }
+        else {
+            isIdle = true;
+            anim.SetBool("IsRunning", false);
+        }
+
+
+        if (canJump == true){
+            isIdle = false;
+            anim.SetBool("IsJumping", true);
+        }
+        else {
+            isIdle = true;
             anim.SetBool("IsJumping", false);
-            anim.SetBool("IsIdle", false);
+        }
+
+        if (inputX != 0){
+            isIdle = false;
             anim.SetBool("IsRunning", true);
             rb.velocity = new Vector2(inputX * moveSpeed, rb.velocity.y);
         }
-        else if (inputX != 0 && jumpAnim == false)
-        {
-            anim.SetBool("IsJumping", true);
+        else{
+            isIdle = true;
             anim.SetBool("IsRunning", false);
-            anim.SetBool("IsIdle", false);
-            rb.velocity = new Vector2(inputX * moveSpeed, rb.velocity.y);
         }
-        else {
-            anim.SetBool("IsIdle", true);
-            anim.SetBool("IsRunning", false);
+
+        if (isIdle == true) {
+            anim.SetBool("IsIdle", false);
         }
 
         //make the sprite face the direction we move by flipping it
@@ -87,12 +101,8 @@ public class PlayerController : MonoBehaviour
         //animations and jumping
         if (canJump == true)
         {
-            anim.SetBool("IsJumping", true);
+            
             rb.AddForce(Vector2.up * jumpspeed);
-        }
-        else {
-            anim.SetBool("IsIdle", true);
-            anim.SetBool("IsJumping", false);
         }
     }
 }
