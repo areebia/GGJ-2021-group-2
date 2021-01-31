@@ -7,7 +7,7 @@ public class PlayerShoot : MonoBehaviour
     public Transform shootPosition;
     public GameObject projectile, crosshair;
     public float bulletSpeed;
-
+    public Animator anim;
     private Vector2 mousepos;
 
     // Start is called before the first frame update
@@ -31,7 +31,6 @@ public class PlayerShoot : MonoBehaviour
         Vector2 targetDelta = new Vector2(mousepos.x,mousepos.y) - new Vector2(transform.position.x , transform.position.y) ;
         PlayerHealth.health -= .1f;
         GameObject bullet = Instantiate(projectile, shootPosition.position, Quaternion.identity);
-        bullet.GetComponent<Rigidbody2D>().AddForce(targetDelta.normalized * bulletSpeed); 
-        
+        bullet.GetComponent<Rigidbody2D>().AddForce(targetDelta.normalized * bulletSpeed);
     }
 }
