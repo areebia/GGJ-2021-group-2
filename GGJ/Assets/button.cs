@@ -18,7 +18,7 @@ public class button : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void QuitGame()
+    /*public void QuitGame()
     {
         // save any game data here
     #if UNITY_EDITOR
@@ -28,7 +28,7 @@ public class button : MonoBehaviour
     #else
          Application.Quit();
     #endif
-    }
+    }*/
 
     // Start is called before the first frame update
     void Start()
