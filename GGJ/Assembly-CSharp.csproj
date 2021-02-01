@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -52,9 +52,6 @@
     <UnityVersion>2020.1.5f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkImageSourceSettings.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\AkRoomManager.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\AkBasePathGetter.cs" />
@@ -91,6 +88,7 @@
     <Compile Include="Assets\Wwise\Deployment\Components\AkBank.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMIDICcTypes.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseTypes\AkWwiseBank.cs" />
+    <Compile Include="Assets\Videoscript.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkIterator.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkRoomParams.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkAmbientLargeModePositioner.cs" />
@@ -177,6 +175,7 @@
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkInitSettings.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkCurveInterpolation.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\Timeline\AkTimelineEventPlayable.cs" />
+    <Compile Include="Assets\button.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkReflectionPathInfo.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkRTPCTrack.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkSwitch.cs" />
@@ -206,6 +205,7 @@
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkDiffractionPathInfo.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseTypes\AkWwiseAuxBus.cs" />
     <Compile Include="Assets\Scripts\SelfDestruct.cs" />
+    <Compile Include="Assets\skip.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseTypes\AkWwiseBaseGroupType.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkCallbackType.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerMouseDown.cs" />
@@ -281,8 +281,6 @@
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkEventCallbackInfo.cs" />
     <Compile Include="Assets\Wwise\Deployment\Components\AkGameObjListenerList.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioSettings.cs" />
-    <Compile Include="Assets\Videoscript.cs" />
-    <Compile Include="Assets\skip.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\iZotope.dll" />
@@ -312,7 +310,6 @@
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\Debug\AkWaapiClient.dll" />
      <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\SoundbanksInfo.xml" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\AkPitchShifter.dll" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Init.txt" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\Profile\AkSoundEngine.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\MasteringSuite.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\AkConvolutionReverb.dll" />
@@ -324,7 +321,6 @@
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\AkSoundSeedImpact.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\MSSpatial.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\iZotope.dll" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Main.txt" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\Debug\AkWaapiClient.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\AkGuitarDistortion.dll" />
      <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Linux\PluginInfo.xml" />
@@ -341,13 +337,11 @@
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\AkMotion.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\Profile\AkWaapiClient.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\AkHarmonizer.dll" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\PluginInfo.xml" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\AkReflect.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\McDSP.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\MSSpatial.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\AkHarmonizer.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\AkSoundSeedGrain.dll" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\AkTremolo.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86_64\DSP\AkSoundSeedImpact.dll" />
      <None Include="Assets\Wwise\Deployment\Plugins\Windows\x86\DSP\Auro.dll" />

@@ -1,0 +1,36 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1718617278	Steps			\Default Work Unit\New Work Unit\Steps	
+	2043403999	Rain			\Default Work Unit\New Work Unit\Rain	
+	3833651337	Jump			\Default Work Unit\New Work Unit\Jump	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1988381400	water_meter			\Default Work Unit\water_meter	
+	2520241501	rain_intensity			\Default Work Unit\rain_intensity	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	205341315	Modulator LFO (Custom)				
+	922150872	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	309322876	Modulator Envelope (Custom)				
+	467641685	Modulator Envelope (Custom)				
+	804802191	Modulator Envelope (Custom)				
+	881109723	Modulator Envelope (Custom)				
+	996116798	Modulator Envelope (Custom)				
+
+Effect plug-ins	ID	Name	Type				Notes
+	146641904	Wwise_Harmonizer_(Custom)	Wwise Harmonizer			
+	286055996	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+	963234218	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	102815184	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Droplets\DropletsR\Wwise Synth One	
+	312442219	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_noise\New Sound SFX\Wwise Synth One	
+	820039791	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_noise\New Sound SFX_02\Wwise Synth One	
+	1063229866	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Rain\Rain_noise\New Sound SFX_01\Wwise Synth One	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	197053369	Steps	Y:\Documents\GitHub\GGJ-2021-group-2\GGJ2021\.cache\Linux\SFX\Step_int - Stereo Out_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Steps\Steps		43756
+	327860067	Jump	Y:\Documents\GitHub\GGJ-2021-group-2\GGJ2021\.cache\Linux\SFX\Jump_int - Stereo Out_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump		43756
+

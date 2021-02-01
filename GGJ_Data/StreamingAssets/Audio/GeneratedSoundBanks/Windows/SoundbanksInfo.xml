@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>/Users/chunyeungpoon/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ-2021-group-2/GGJ2021/</ProjectRoot>
+		<SourceFilesRoot>/Users/chunyeungpoon/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ-2021-group-2/GGJ2021/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/chunyeungpoon/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ-2021-group-2/GGJ2021/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/chunyeungpoon/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GGJ-2021-group-2/GGJ2021/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1909133308">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="824257819">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\New Work Unit\Jump" DurationType="OneShot" DurationMin="0.474098" DurationMax="0.517605">
+					<IncludedMemoryFiles>
+						<File Id="327860067" Language="SFX">
+							<ShortName>Jump_int - Stereo Out.wav</ShortName>
+							<Path>SFX/Jump_int - Stereo Out_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2043403999" Name="Rain" ObjectPath="\Events\Default Work Unit\New Work Unit\Rain" DurationType="Infinite"/>
+				<Event Id="1718617278" Name="Steps" ObjectPath="\Events\Default Work Unit\New Work Unit\Steps" DurationType="OneShot" DurationMin="0.474098" DurationMax="0.652142">
+					<IncludedMemoryFiles>
+						<File Id="197053369" Language="SFX">
+							<ShortName>Step_int - Stereo Out.wav</ShortName>
+							<Path>SFX/Step_int - Stereo Out_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1988381400" Name="water_meter" ObjectPath="\Game Parameters\Default Work Unit\water_meter"/>
+				<GameParameter Id="2520241501" Name="rain_intensity" ObjectPath="\Game Parameters\Default Work Unit\rain_intensity"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
