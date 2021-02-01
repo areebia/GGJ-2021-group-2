@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-        health = 2f;
+        health = 1.5f;
     }
     void Update()
     {
